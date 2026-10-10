@@ -33,3 +33,6 @@ Every event is reduced to three fields: `id`, `ts` (UTC ISO timestamp), `text`.
 ## Where this goes
 
 Wikipedia is a stand-in feed. The same structure works for any source that can be turned into `id`, `ts`, `text` records: sales events, pipeline logs, support tickets, sensor readings, or news. To adapt it, replace `pull_recent()`. For production, swap the in-memory index for pgvector or a similar store, and move the logic behind a FastAPI endpoint with a streaming or database source.
+
+## Demostration link
+https://drive.google.com/file/d/1F2B0F8hADJeRoyj9sN7UCpD1sWJlDi3Y/view?usp=sharing
